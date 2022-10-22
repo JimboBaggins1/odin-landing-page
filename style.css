@@ -29,6 +29,35 @@
    width: 30%;
 }
 
+.info-header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cards {
+   display: flex;
+   /* border: 2px solid red; */
+   justify-content: center;
+   gap: 50px;
+
+}
+
+.card {
+   /* border: 2px solid red; */
+   display: flex;
+   flex-direction: column;
+   flex: 1 0 auto;
+   max-width: 150px;
+   text-align: center;
+}
+
+.card .image {
+   flex: 1 0 auto;
+   aspect-ratio: 1 / 1;
+   border: 3px solid royalblue;
+   border-radius: 10px;
+}
 button {
    padding: 5px 15px;
    border-radius: 8px;
