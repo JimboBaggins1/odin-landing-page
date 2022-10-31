@@ -1,5 +1,8 @@
 /* style.css */
 
+.section-one {
+   background-color: #1F2937;
+}
 .nav-bar,
 .nav-bar ul {
    border: 2px solid red;
@@ -29,6 +32,12 @@
    width: 30%;
 }
 
+.hero-main-text {
+   font-family: 'Roboto';
+   font-weight: 800;
+   font-size: 48px;
+   color: #F9FAF8;
+}
 .info-header {
    display: flex;
    justify-content: center;
@@ -58,16 +67,60 @@
    border: 3px solid royalblue;
    border-radius: 10px;
 }
+
+.quote {
+   background-color: #E5E7EB;
+   border: 2px solid blue;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.quote div {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   border: 2px solid red;
+   font-size: 36px;
+   color: #1F2937;
+   font-family: 'Roboto';
+   margin: 0;
+   max-width: 66%;
+}
+
+.modalBox {
+   display: flex;
+   justify-content: center;
+}
+
+.modal {
+   flex: 1 1 auto;
+   background-color: royalblue;
+   max-width: 66%;
+   border-radius: 5px;
+}
+
+.modal .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 20px 100px;
+}
+
+
 button {
    padding: 5px 15px;
    border-radius: 8px;
-}
-
-button.sign-up {
    background: royalblue;
    border: 1px solid royalblue;
    color: white;
 }
+
+button.signUp{
+   border: 1px solid white;
+}
+
 
 a {
    text-decoration: none;
