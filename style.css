@@ -1,26 +1,42 @@
 /* style.css */
 
-.section-one {
+* {
+   font-family: 'Roboto', sans-serif;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 0;
+   padding: 0;
+}
+
+.headerSection, .sectionOne, .sectionTwo, .sectionThree, .sectionFour {
+   padding: 0px 0px 50px 0px;
+}
+
+.headerSection, .sectionOne, .footer {
    background-color: #1F2937;
 }
 .nav-bar,
 .nav-bar ul {
-   border: 2px solid red;
+   /* border: 2px solid red; */
    display: flex;
    justify-content: space-around;
    align-items: center;
 }
 
 .nav-bar ul {
-   border: 2px solid red;
+   /* border: 2px solid red; */
    list-style: none;
    align-items: center;
    gap: 10px;
    padding: 0px;
 }
 
-.content {
-   border: 2px solid blue;
+.sectionOne {
+   /* border: 2px solid blue; */
    display: flex;
    justify-content: center;
    gap: 50px;
@@ -28,7 +44,7 @@
 
 .left-side,
 .right-side {
-   border: 2px solid blue;
+   /* border: 2px solid blue; */
    width: 30%;
 }
 
@@ -38,10 +54,19 @@
    font-size: 48px;
    color: #F9FAF8;
 }
+
+.hero-secondary-text, .header-link, .textContainer .header, .textContainer .text {
+   font-size: 18px;
+   color: #E5E7EB;
+}
 .info-header {
    display: flex;
    justify-content: center;
    align-items: center;
+   font-size: 36px;
+   font-weight: 800;
+   color: #1F2937;
+   padding: 30px;
 }
 
 .cards {
@@ -64,30 +89,38 @@
 .card .image {
    flex: 1 0 auto;
    aspect-ratio: 1 / 1;
-   border: 3px solid royalblue;
+   border: 3px solid #3882F6;
    border-radius: 10px;
 }
 
 .quote {
    background-color: #E5E7EB;
-   border: 2px solid blue;
+   /* border: 2px solid blue; */
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
+   font-style: italic;
+   font-weight: 300;
+   font-size: 36px;
+   color: #1F2937;
 }
 
 .quote div {
    display: flex;
    flex-direction: column;
    align-items: flex-end;
-   border: 2px solid red;
-   font-size: 36px;
-   color: #1F2937;
-   font-family: 'Roboto';
+   /* border: 2px solid red; */
    margin: 0;
    max-width: 66%;
+
 }
 
+.quote div .quoteAuthor {
+   font-size: 18px;
+   font-weight: 800;
+   font-style: normal;
+}
+ 
 .modalBox {
    display: flex;
    justify-content: center;
@@ -95,7 +128,7 @@
 
 .modal {
    flex: 1 1 auto;
-   background-color: royalblue;
+   background-color: #3882F6;
    max-width: 66%;
    border-radius: 5px;
 }
@@ -108,12 +141,27 @@
    padding: 20px 100px;
 }
 
+.textContainer .header {
+   font-weight: 800;
+}
+
+.textContainer .text {
+   font-weight: 300;
+}
+
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #F9FAF8;
+   padding: 30px;
+}
 
 button {
    padding: 5px 15px;
    border-radius: 8px;
-   background: royalblue;
-   border: 1px solid royalblue;
+   background: #3882F6;
+   border: 1px solid #3882F6;
    color: white;
 }
 
